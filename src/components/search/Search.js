@@ -31,10 +31,10 @@ export default function Search( { onSearch, textSearch } ){
                     onChange={handleChange} 
                     placeholder="Search by title" />
 
-        <input type="text" name="category" 
+        {/* <input type="text" name="category" 
                     value={formData.category} 
                     onChange={handleChange} 
-                    placeholder="Search by title" />
+                    placeholder="Search by title" /> */}
 
                 <button>Search</button>
             </form>

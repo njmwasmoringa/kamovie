@@ -11,6 +11,7 @@ export default function MovieList( { movies } ){
         <div>
             { movies.map(movie=><Movie 
                 key={movie.id} 
+                id={movie.id}
                 like={likeMovie}
                 title={movie.title}
                 description={movie.description}

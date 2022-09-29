@@ -16,14 +16,17 @@
  * Moves information back up using callback functions 
  */
 
-export default function Movie( { id, image, title, description, likes, like } ){
+import { useParams } from "react-router-dom"
+
+export default function Movie( { id, image, title, description, likes, like, edit } ){
+    const params = useParams();
     return (
         <div>
             <img src={ image } height={150} />
             <h4>{ title }</h4>
             <p>{ description }</p>
             <button type="button" onClick={like} >Like | {likes}</button>
-            <button type="button">Share</button>
+            <a href={"/edit/"+id}>Edit</a>
         </div>
     )
 }
